@@ -23,13 +23,18 @@
 
 body {
     margin: 0;
-    /* min-height: 100dvh; */
-    /* background-color: brown; */
 
     /* font rules */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    @media(min-width: 90em) {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .features {
@@ -72,7 +77,6 @@ body {
 }
 
 .features__section--cards {
-    /* background-color: burlywood; */
     display: grid;
     gap: 2rem;
     max-width: 19.625em;
@@ -105,7 +109,6 @@ body {
 
 .features__card {
     padding: 2rem;
-    /* background-color: lightblue; */
     border-radius: .5em;
     box-shadow: 0 .3125em 1.25em rgb(0, 0, 0, .35);
 }
