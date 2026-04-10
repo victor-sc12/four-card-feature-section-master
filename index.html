@@ -13,10 +13,10 @@
 
 <body>
   <main>
-    <article class="features">
+    <section class="features" aria-labelledby="features-title">
 
       <header class="features__header">
-        <h1 class="features__title features__title--no-margin">
+        <h1 id="features-title" class="features__title features__title--no-margin">
           <span class="features__title-part--no-bold">Reliable, efficient delivery</span>
           <span class="features__title-part">Powered by Technology</span>
         </h1>
@@ -27,30 +27,40 @@
         to ensure that your project is successful</p>
       </section>
 
-      <section class="features__section features__section--cards">
-        <div class="features__card features__card--supervisor">
-          <h3 class="features__card-title">Supervisor</h3>
-          <p class="features__card-description">Monitors activity to identify project roadblocks</p>
-          <img src="images/icon-supervisor.svg" class="features__icon" alt="">
-        </div>
-        <div class="features__card features__card--team-builder">
-          <h3 class="features__card-title">Team Builder</h3>
-          <p class="features__card-description">Scans our talent network to create the optimal team for your project</p>
-          <img src="images/icon-team-builder.svg" class="features__icon" alt="">
-        </div>
-        <div class="features__card features__card--karma">
-          <h3 class="features__card-title">Karma</h3>
-          <p class="features__card-description">Regularly evaluates our talent to ensure quality</p>
-          <img src="images/icon-karma.svg" class="features__icon" alt="">
-        </div>
-        <div class="features__card features__card--calculator">
-          <h3 class="features__card-title">Calculator</h3>
-          <p class="features__card-description">Uses data from past projects to provide better delivery estimates</p>
-          <img src="images/icon-calculator.svg" class="features__icon" alt="">
-        </div>
+      <section class="features__section features__section--cards" aria-label="Features List">
+        <ul class="list features__list">
+          <li class="list__item features__list-item features__list-item--supervisor">
+            <article class="features__card features__card--supervisor">
+              <h2 class="features__card-title">Supervisor</h2>
+              <p class="features__card-description">Monitors activity to identify project roadblocks</p>
+              <img src="images/icon-supervisor.svg" class="features__icon" alt="">
+            </article>
+          </li>
+          <li class="list__item features__list-item features__list-item--team-builder">
+            <article class="features__card features__card--team-builder">
+              <h2 class="features__card-title">Team Builder</h2>
+              <p class="features__card-description">Scans our talent network to create the optimal team for your project</p>
+              <img src="images/icon-team-builder.svg" class="features__icon" alt="">
+            </article>
+          </li>
+          <li class="list__item features__list-item features__list-item--karma">
+            <article class="features__card features__card--karma">
+              <h2 class="features__card-title">Karma</h2>
+              <p class="features__card-description">Regularly evaluates our talent to ensure quality</p>
+              <img src="images/icon-karma.svg" class="features__icon" alt="">
+            </article>
+          </li>
+          <li class="list__item features__list-item features__list-item--calculator">
+            <article class="features__card features__card--calculator">
+              <h2 class="features__card-title">Calculator</h2>
+              <p class="features__card-description">Uses data from past projects to provide better delivery estimates</p>
+              <img src="images/icon-calculator.svg" class="features__icon" alt="">
+            </article>
+          </li>
+        </ul>
       </section>
 
-    </article>
+    </section>
   </main>
   
   <aside class="aside-container">
@@ -58,7 +68,7 @@
       Challenge by 
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" referrerpolicy="no-referrer" rel="noopener noreferrer">Frontend Mentor</a>. 
       Coded by 
-      <a href="#">Víctor Suquilanda</a>.
+      <a href="https://www.frontendmentor.io/profile/victor-sc12" target="_blank" referrerpolicy="no-referrer" rel="noopener noreferrer">Víctor Suquilanda</a>.
     </p>
   </aside>
 </body>
