@@ -28,8 +28,10 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
 
-    @media(min-width: 48em) {
+@media(min-width: 48em) {
+    body {
         min-height: 100dvh;
         display: flex;
         flex-direction: column;
@@ -85,8 +87,10 @@ body {
     gap: 2rem;
     max-width: 19.625em;
     margin: clamp(3.75em, 10vw, 4.625em) auto 0 auto;
+}
 
-    @media (min-width: 48em) {
+@media (min-width: 48em) {
+    .features__list {
         max-width: 41.25em;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -96,8 +100,10 @@ body {
         '. calculator calculator .';
         justify-content: center;
     }
+}
 
-    @media (min-width: 90em) {
+@media (min-width: 90em) {
+    .features__list {
         max-width: 69.625em;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -109,28 +115,11 @@ body {
     }
 }
 
-.features__list-item--supervisor {
-    @media (min-width: 48em) {
-        grid-area: supervisor;
-    }
-}
-
-.features__list-item--team-builder {
-    @media (min-width: 48em) {
-        grid-area: team-builder;
-    }
-}
-
-.features__list-item--karma {
-    @media (min-width: 48em) {
-        grid-area: karma;
-    }
-}
-
-.features__list-item--calculator {
-    @media (min-width: 48em) {
-        grid-area: calculator;
-    }
+@media (min-width: 48em) {
+    .features__list-item--supervisor {grid-area: supervisor;}
+    .features__list-item--team-builder {grid-area: team-builder;}
+    .features__list-item--karma {grid-area: karma;}
+    .features__list-item--calculator {grid-area: calculator;}
 }
 
 .features__card {
@@ -141,13 +130,9 @@ body {
 }
 
 .features__card--supervisor {--card-border-color: var(--primary-cyan);}
-
 .features__card--team-builder {--card-border-color: var(--primary-red);}
-
 .features__card--karma {--card-border-color: var(--primary-orange);}
-
 .features__card--calculator {--card-border-color: var(--primary-blue);}
-
 
 .features__card-title {
     margin: 0;
@@ -166,5 +151,5 @@ body {
     margin-top: 2em;
 }
 
-.aside-container__attribution { font-size: 0.6875rem; text-align: center; margin: 2.1em 0; }
-.aside-container__attribution a { color: hsl(228, 45%, 44%); }
+.attribution__content { font-size: 0.6875rem; text-align: center; margin: 2.1em 0; }
+.attribution__content a { color: hsl(228, 45%, 44%); }
